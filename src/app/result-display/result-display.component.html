@@ -1,0 +1,35 @@
+<section class="search-box">
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title">BEST DEALS</h1>
+            <img src="../../assets/hamburger.png" alt="menu">
+        </div>
+        <div class="inputs">
+            <input class="search-input" type="text">
+            <button class="search-button"></button>
+        </div>
+    </div>
+</section>
+<h2 class="sub-title">Top for you</h2>
+<div *ngFor="let result of results" class=result>
+    <div class="classifier"> <div>Top</div></div>
+    <div class="result-container">
+        <div class="pictures">
+            <img [src]="result.imageURL" alt="">
+            <img class="retail-brand" src="../../assets/amazon.png" alt="">
+        </div>
+        <div class="product-info">
+            <h3 class="product-title">{{result.title}}</h3>
+            <div class="rating">
+                <img *ngFor="let star of ' '.repeat(5).split('')" src="../../assets/star.png" alt="">
+                <span class="raters">288</span>
+            </div>
+            <div class="price">
+                <div class="real-price-container"><div class="real-price">$350.00</div> <img src="../../assets/prime.png" alt=""></div>
+                <div class="fake-price">Price: <span class="old-price">$799.99</span>(35% off)</div>
+                <a [href]="result.url" class="special-offer">Save up to 50% on ORORO Heated Apparel</a>
+            </div>
+
+        </div>
+    </div>
+</div>

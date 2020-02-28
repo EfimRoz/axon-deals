@@ -1,0 +1,131 @@
+.search-box {
+    background-color: #044421;
+    height: 8.2em;
+}
+.search-box .container {
+    margin-left: 2em;
+    padding-top: 20px;
+}
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+.title-container img {
+    width: auto;
+    height: 100%;
+    margin-top: 0.2em;
+}
+.title {
+    color: #ffffff;
+    margin-top: 0;
+    width: 4em;
+}
+.inputs {
+    height: 2em;
+    width: 15em;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;;
+    margin-bottom: 1em;
+}
+.search-input {
+    height: 100%;
+    width: 83%;
+    border: 0;
+    padding: 0;
+    /* border-radiu; */
+}
+.search-button {
+    height: 2em;
+    padding: 0;
+    height: 100%;
+    width: 17%;
+    border: 0;
+    background-color: #ffc238;
+    background: #ffc238 url('../../assets/search.png');
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    /* border: 0; */
+}
+.sub-title {
+    color:#2b2b2b;
+    margin-left: 0.5em;
+}
+.result {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 0.5em;
+    display: flex;
+}
+.classifier {
+    width: 3em;
+    height: 1.5em;
+    background-color: #ff5323;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.classifier div {
+    font-size: small;;
+}
+.pictures {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 74px;
+}
+.result-container {
+    display: flex;
+    height: 200px;
+}
+.product-info {
+    margin-left: 3.5em;
+
+}
+.product-title {
+    /* width: 5em; */
+    margin-top: 0;
+    color: #2b2b2b;
+    font-weight: 500;
+}
+.pictures img {
+    width: 100%;
+    height: auto;
+}
+.rating {
+    display: flex;
+    margin-bottom: 1em;
+}
+.rating img {
+    width: auto;
+    height: 100%;
+}
+.raters {
+    font-size: small;
+    color: #686868;
+}
+.real-price-container {
+    display: flex;
+    align-items: center;
+}
+.real-price-container img{
+    width: auto;
+    height: 100%;
+    margin-left: 0.5em;
+}
+.real-price{
+    font-weight: bold;
+    font-size: x-large;
+}
+.fake-price {
+    color: #2b2b2b;
+    margin-bottom: 42px;
+}
+.special-offer {
+    color:#0c69c8;
+    font-weight: bold;
+    width: 14em;
+}
