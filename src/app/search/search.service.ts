@@ -21,9 +21,7 @@ export class SearchService {
       const amazon = this.amazonService.searchJson(keyword);
       const ebay = this.ebayService.searchJson(keyword);
       result = forkJoin([amazon, ebay]).pipe(map( results =>{
-        console.log('here', results);
         const returnResult = [].concat(results[0], results[1]);
-        console.log('returnResult', returnResult);
         return returnResult;
       }));
     }

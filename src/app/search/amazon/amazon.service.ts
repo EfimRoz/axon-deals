@@ -17,7 +17,6 @@ export class AmazonService {
   }
 
   private fitData(data: any) {
-    console.log('old shit:', data);
     const dataArray = data.offers;
     const fitArray = dataArray.map(product => {
       return {'unique': product.ASIN, 'title': product.product_title, url: product.product_url, 'imageURL': product.img};

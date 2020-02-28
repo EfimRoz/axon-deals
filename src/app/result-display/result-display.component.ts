@@ -21,7 +21,6 @@ export class ResultDisplayComponent implements OnInit {
       const result = this.searchService.searchJson(keyword);
       result.subscribe( (data: any) => {
         this.results = data;
-        console.log(data);
       })
     }
     
